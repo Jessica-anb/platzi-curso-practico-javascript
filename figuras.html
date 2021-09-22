@@ -20,6 +20,31 @@
             <button type="button" onclick="calcularAreaCuadrado()">Calcular el área</button>
         </form>
     </section>
+    <section>
+        <h2>Calcula el área y perímetro de un triágulo</h2>
+        <form action="">
+            <label for="">Escribe las medidas de los lados:</label>
+            <input id="InputLado1" type="number" style="width: 50px;" />
+            <input id="InputLado2" type="number" style="width: 50px;" />
+            <label for="InputBase">Escribe la medida de la base:</label>
+            <input id="InputBase" type="number" style="width: 50px;" />
+            <label for="InputAltura">Escribe la medida de la altura:</label>
+            <input id="InputAltura" type="number" style="width: 50px;" />
+            <button type="button" onclick="calcularPerimetroTriangulo()">Calcular el perímetro</button>
+            <button type="button" onclick="calcularAreaTriangulo()">Calcular el área</button>
+        </form>
+    </section>
+    <section>
+        <h2>Calcula el área y perímetro de un Circulo</h2>
+        <form action="">
+            <label for="InputRadio">Escribe cuanto mide el radio:</label>
+            <input id="InputRadio" type="number" style="width: 50px;" onchange="calcularDiametroCirculo()" />
+            <label for="InputDiametro">El diametro es:</label>
+            <input id="InputDiametro" type="number" style="width: 50px;" />
+            <button type="button" onclick="calcularPerimetroCirculo()">Calcular el perímetro</button>
+            <button type="button" onclick="calcularAreaCirculo()">Calcular el área</button>
+        </form>
+    </section>
     
     <!-- Se puede escribir dentro de este elemento pero es mejor tenerlo en un archivo separado -->
     <script src="./figuras.js"></script>
